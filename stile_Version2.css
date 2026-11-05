@@ -1,0 +1,160 @@
+:root {
+  --purple: #4c3cd3;
+  --blue: #6355eb;
+  --lime: #ccff00;
+  --coral: #f85c5c;
+  --gray: #9c9c9c;
+  --black: #000;
+  --white: #fff;
+  --font: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--black);
+  font-family: var(--font);
+}
+
+a {
+  color: inherit;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 5vw;
+  border-bottom: 2px solid var(--black);
+  background: var(--white);
+}
+
+.wordmark {
+  font-size: 1.4rem;
+  font-weight: 900;
+  letter-spacing: -0.08em;
+  text-decoration: none;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px 18px;
+}
+
+.main-nav a {
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+}
+
+.page-section {
+  min-height: 75vh;
+  padding: clamp(48px, 9vw, 120px) 8vw;
+}
+
+.scienza {
+  background: var(--blue);
+}
+
+.cultura {
+  background: var(--coral);
+}
+
+.about {
+  background: var(--gray);
+}
+
+.collabora {
+  background: var(--black);
+  color: var(--white);
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  margin: 0 0 28px;
+  font-size: clamp(3rem, 9vw, 8rem);
+  line-height: 0.88;
+  letter-spacing: -0.09em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.scienza .section-title {
+  text-decoration: underline;
+  text-decoration-thickness: 8px;
+  text-underline-offset: 12px;
+}
+
+.section-intro,
+.about-copy,
+.collabora-copy {
+  max-width: 760px;
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
+  line-height: 1.5;
+}
+
+.section-intro,
+.collabora-copy {
+  font-weight: 700;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 8vw;
+  background: var(--black);
+  color: var(--white);
+  font-size: 0.85rem;
+}
+
+.contact-link {
+  display: inline-block;
+  margin-top: 16px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid currentColor;
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .main-nav {
+    justify-content: flex-start;
+  }
+
+  .main-nav a {
+    font-size: 0.7rem;
+  }
+
+  .site-footer {
+    flex-direction: column;
+  }
+}
