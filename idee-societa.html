@@ -1,54 +1,48 @@
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  padding: 18px 5vw;
-  border-bottom: 2px solid #000;
-  background: #fff;
-}
 
-.wordmark {
-  color: #000;
-  font-size: 1.4rem;
-  font-weight: 900;
-  letter-spacing: -0.08em;
-  text-decoration: none;
-}
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Idee &amp; Società — CURIOSA</title>
+  <link rel="stylesheet" href="/curiosa.github.io/stile.css">
+</head>
+<body>
 
-.main-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 8px 18px;
-}
+  <header class="site-header">
+    <a class="wordmark" href="/curiosa.github.io/">CURIOSA</a>
+    <nav class="main-nav" aria-label="Navigazione principale">
+      <a href="/curiosa.github.io/">Home</a>
+      <a href="/curiosa.github.io/idee-societa.html">Idee &amp; Società</a>
+      <a href="/curiosa.github.io/scienza-tech.html">Scienza &amp; Tech</a>
+      <a href="/curiosa.github.io/cultura.html">Cultura</a>
+      <a href="/curiosa.github.io/chi-siamo.html">Chi siamo</a>
+      <a href="/curiosa.github.io/collabora.html">Collabora</a>
+    </nav>
+  </header>
 
-.main-nav a {
-  color: #000;
-  font-size: 0.78rem;
-  font-weight: 900;
-  text-decoration: none;
-  text-transform: uppercase;
-}
+  <main class="page-section idee">
+    <p class="eyebrow">01 / Il presente, da vicino</p>
+    <h1 class="section-title">Idee &amp;<br>Società</h1>
 
-.main-nav a:hover,
-.main-nav a:focus-visible {
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 4px;
-}
+    <div class="section-intro">
+      <p>
+        Cronaca, opinioni, attualità, scuola, lavoro e società: raccontiamo
+        quello che succede intorno a noi per capire come ci riguarda e quali
+        cambiamenti possiamo immaginare insieme.
+      </p>
+      <p>
+        Crediamo che informarsi sia il primo passo per partecipare: per questo
+        proviamo a dare spazio a voci diverse e a spiegare i temi importanti
+        con chiarezza.
+      </p>
+    </div>
+  </main>
 
-@media (max-width: 700px) {
-  .site-header {
-    align-items: flex-start;
-    flex-direction: column;
-  }
+  <footer class="site-footer">
+    <span>© CURIOSA</span>
+    <a href="/curiosa.github.io/">Torna alla Home ↑</a>
+  </footer>
 
-  .main-nav {
-    justify-content: flex-start;
-  }
-
-  .main-nav a {
-    font-size: 0.7rem;
-  }
-}
+</body>
+</html>
