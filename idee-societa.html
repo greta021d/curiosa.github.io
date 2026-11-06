@@ -1,22 +1,54 @@
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 5vw;
+  border-bottom: 2px solid #000;
+  background: #fff;
+}
 
----
-layout: section
-title: "Idee & Società"
-theme: section-idee
-section_category: idee-societa
----
+.wordmark {
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: 900;
+  letter-spacing: -0.08em;
+  text-decoration: none;
+}
 
-<h1 class="section-title">Idee &amp;<br>Società</h1>
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px 18px;
+}
 
-<div class="section-intro">
-  <p>
-    Cronaca, opinioni, attualità, scuola, lavoro e società: raccontiamo
-    quello che succede intorno a noi per capire come ci riguarda e quali
-    cambiamenti possiamo immaginare insieme.
-  </p>
-  <p>
-    Crediamo che informarsi sia il primo passo per partecipare: per questo
-    proviamo a dare spazio a voci diverse e a spiegare i temi importanti
-    con chiarezza.
-  </p>
-</div>
+.main-nav a {
+  color: #000;
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 700px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .main-nav {
+    justify-content: flex-start;
+  }
+
+  .main-nav a {
+    font-size: 0.7rem;
+  }
+}
