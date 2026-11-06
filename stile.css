@@ -70,7 +70,9 @@ a {
 .scienza {
   background: var(--blue);
 }
-
+.idee {
+  background: var(--lime);
+}
 .cultura {
   background: var(--coral);
 }
